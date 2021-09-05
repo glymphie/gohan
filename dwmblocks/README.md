@@ -11,12 +11,10 @@
 </h2>
 
 <p>
-    <pre><code>dwmblocks
-    </code></pre>
+    <pre><code>dwmblocks</code></pre>
 
-    In your .xinitrc
-    <pre><code>exec dbus-launch --sh-syntax dwmblocks &> /tmp/dwmblocks.log &
-    </code></pre>
+In your .xinitrc
+    <pre><code>exec dbus-launch --sh-syntax dwmblocks &> /tmp/dwmblocks.log &</code></pre>
 </p>
 
 <h2>
