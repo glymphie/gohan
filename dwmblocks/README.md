@@ -8,6 +8,12 @@ signaling, clickability, cursor hinting and color.
 `dwmblocks`
 
 # Configuration
+<p>
+    <pre><code>dwmblocks</code></pre>
+
+In your .xinitrc
+    <pre><code>exec dbus-launch --sh-syntax dwmblocks &> /tmp/dwmblocks.log &</code></pre>
+</p>
 
 Refer to [config.h](config.def.h). It allows addition/removal of blocks and a
 few other configurations.
