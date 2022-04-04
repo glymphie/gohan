@@ -1,5 +1,5 @@
 # dmenu version
-VERSION = 5.0
+VERSION = 5.1
 
 # paths
 PREFIX = /usr/local
@@ -13,8 +13,8 @@ XINERAMALIBS  = -lXinerama
 XINERAMAFLAGS = -DXINERAMA
 
 # freetype
-FREETYPELIBS = -lfontconfig -lXft
-FREETYPEINC = /usr/include/freetype2
+FREETYPELIBS = -lfontconfig -lfreetype -lXrender -lX11 -L../libxft-bgra/src -l:libXft.a
+FREETYPEINC = /usr/include/freetype2 -I$(PWD)/../libxft-bgra/include
 # OpenBSD (uncomment)
 #FREETYPEINC = $(X11INC)/freetype2
 

@@ -1,46 +1,72 @@
-<h1> 
-    My build of dwmblocks
-</h1>
+# dwmblocks
 
-<p>
-    A <a href="https://github.com/ashish-yadav11/dwmblocks">modular status monitor for dwm</a>, edited to include my public bins.
-</p>
+Modular status monitor for dwm written in C with features including
+signaling, clickability, cursor hinting and color.
 
-<h2>
-    Usage
-</h2>
+# Usage
 
-<p>
-    <pre><code>dwmblocks
-    </code></pre>
+`dwmblocks`
 
-    In your .xinitrc
-    <pre><code>exec dbus-launch --sh-syntax dwmblocks &> /tmp/dwmblocks.log &
-    </code></pre>
-</p>
+# Configuration
 
-<h2>
-    Blocks and buttons
-</h2>
+Refer to [config.h](config.def.h). It allows addition/removal of blocks and a
+few other configurations.
 
-<ul>
-    <li><b>Currently playing</b>: Shows the currently playing song via Spotify. </li>
-    <li><b>Volume info</b>: Shows the current Master volume. </li>
-        <dd>- Left-click: Start Pulsemixer client window.</dd>
-        <dd>- Right-click: Mute.</dd>
-    <li><b>Weather</b>: Shows the weather in Copenhagen. </li>
-        <dd>- Left-click: Show some more extensive weather information.</dd>
-    <li><b>Ethernet connection</b>: Shows all ethernet connections. </li>
-        <dd>- Left-click: Shows all interfaces with their IPs. Only the ones with operstate "UP".</dd>
-    <li><b>Internet connection</b>: Shows connectivity to the internet.</li>
-        <dd>- Left-click: Shows public IPv4 and IPv6.</dd>
-    <li><b>Date</b>: Shows the current date.</li>
-</ul>
+> `make`, the first time you run it, or `make config.h` will create config.h by
+> copying [config.def.h](config.def.h).
 
-<h2>
-    Installation
-</h2>
+> The provided blocks use siji font for icons.
 
-<pre><code>make
-doas make install
-</code></pre>
+# Colored output and Clickability
+
+[patches](patches) folder contains two patches for dwm, one for dwm already
+patched with systray patch and the other for vanilla dwm. One of the patches,
+whichever appropriate, is essential for dwmblocks to function properly. It will
+add support for colored text, clickability and cursor hinting when hovering on
+clickable blocks (inspired by polybar).
+
+Clickability is inspired by statuscmd patch for dwm. On clicking on text
+corresponding to a clickable block, the program specified to handle clicks for
+that block is executed with the first argument specifying which button was
+clicked (1 for left, 2 for middle and 3 for right).
+
+Colored output is inspired by statuscolors patch for dwm. To add colors, have
+your programs for the blocks output raw characters from `\x0b` to `\x1f`. `\x0b`
+in status text switches active colorscheme to the first one in the colors array
+defined in dwm's config.h and so on. See
+[statuscolors patch for dwm](https://dwm.suckless.org/patches/statuscolors/)
+for more info. Keep in mind that you have to start from `\x0b` instead of `\x01`
+as instructed on the page.
+
+# Signaling changes
+
+To signal a specific block to update, run `sigdwmblocks <signal> [<sigval>]`.
+`<sigval>` is optional and must be an integer. If provided, it is passed as the
+first argument to the program specified for updating the block.
+
+# xgetrootname
+
+A tiny program to get the current root name. May prove helpful in debugging.
+
+# Installation
+
+Clone the repository and run
+```
+cd dwmblocks
+make
+sudo make install
+```
+
+# Acknowledgements
+
+Some ideas and code was taken from other projects. Credits for those go to -
+
+* torrinfail ([original dwmblocks implementation](https://github.com/torrinfail/dwmblocks))
+* Daniel Bylinka ([statuscmd patch for dwm](https://dwm.suckless.org/patches/statuscmd/))
+* Jeremy Jay ([statuscolors patch for dwm](https://dwm.suckless.org/patches/statuscolors/))
+
+# See also
+
+* [dsblocks](https://github.com/ashish-yadav11/dsblocks) - A clone of this
+  project with the only difference being that C functions instead of external
+  programs are used to update blocks and handle clicks.

@@ -3,8 +3,8 @@
 </div>
 
 <div align="center">
-  <h1>A collection of riced suckless utilities</h1>
-</div>   
+  <h1>A collection of riced <a href="https://suckless.org/">suckless</a> utilities</h1>
+</div>
 
 <b>
   <div align="center">
@@ -20,21 +20,29 @@
       </tr>
       <tr>
         <td>dwmblocks</td>
-      </tr>  
+      </tr>
+      <tr>
+        <td>slock</td>
+      </tr>
     </table>
-  </div>   
+  </div>
 </b>
-  
+
 <div align="center">
   <h2>
-    <img src="https://i.imgur.com/nPRyR0D.png" alt="Smiley" align="center" width=94> 
-    DISCLAIMER
-    <img src="https://i.imgur.com/BCr42Jf.png" alt="Smiley" align="center" width=94> 
+    <img src="https://i.imgur.com/nPRyR0D.png" alt=":)" align="center" width=94>
+    IMPORTANT
+    <img src="https://i.imgur.com/BCr42Jf.png" alt=":)" align="center" width=94>
   </h2>
 </div>
 
 <div align="center">
-  <p>  
-    I use <b>doas</b>
+  <p>
+    <b>libxft-bgra</b> is included to enable emojies in the suckless utilities.
+    The makefiles are edited to use this library instead of the one installed on
+    the system.
+  </p>
+  <p>
+    I use <b>doas</b> btw
   </p>
 </div>

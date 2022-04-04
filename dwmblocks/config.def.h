@@ -46,6 +46,8 @@ static Block blocks[] = {
         { PATH("get-track-info"),       PATH("get-track-info.button"),  3,              1},
         { PATH("vol-info"),             PATH("vol-info.button"),        3,              2},
         { PATH("weather-curl"),         PATH("weather-curl.button"),    3600,           3},
+        { PATH("kb-info"),              NULL,  						    5,              7},
+        { PATH("net-traf"),         	NULL,						    1,              8},
         { PATH("eth-con"),         		PATH("eth-con.button"),         1,              4},
         { PATH("int-con"),         		PATH("int-con.button"),         5,              5},
         { PATH("date-eu"),         		PATH("date-eu.button"),         1,              6},

@@ -13,8 +13,8 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static int floatposgrid_x           = 5;        /* float grid columns */
 static int floatposgrid_y           = 5;        /* float grid rows */
-static const char *fonts[]          = { "Hack Nerd Font Mono:size=11" };
-static const char dmenufont[]       = "Hack Nerd Font Mono:size=11";
+static const char *fonts[]          = { "Hack Nerd Font Mono:pixelsize=15:antialias=true:autohint=true", "emoji:pixelsize=15:antialias=true:autohint=true" };
+static const char dmenufont[]       = "Hack Nerd Font Mono:pixelsize=15:antialias=true:autohint=true";
 static const char col_normfg[]      = "#ffffff";
 static const char col_normbg[]      = "#111111";
 static const char col_selfg[]       = "#111111";
@@ -46,7 +46,7 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class     		instance  title           	tags mask	isfloating	isterminal	noswallow	floatpos		  			monitor */
-	{ "St",      		NULL,     NULL,           	0,         	0,          1,          0,       	NULL,			  			-1 },
+	{ "st",      		NULL,     NULL,           	0,         	0,          1,          0,       	NULL,			  			-1 },
 	{ NULL,		        NULL,     "Event Tester", 	0,         	1,          0,          1,       	NULL,			  			-1 }, /* xev */
 	{ NULL,		 		NULL,     "pulsemixer",   	0,    	   	1,          0,          -1,       	"50% 50%",			  		-1 }, 
 	{ "b_mouse",		NULL,     NULL,   	 	  	0,    	   	1,          0,          -1,       	"0m 0m 400W 200H", 			-1 }, 
@@ -94,8 +94,8 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-c", "-l", "20","-bw","3", NULL };
-//static const char *termcmd[]  = { "st", NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-i", "-c", "-l", "20","-bw","3", NULL };
+/* static const char *termcmd[]  = { "st", NULL }; */
 
 #include "movestack.c"
 static Key keys[] = {
