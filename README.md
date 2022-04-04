@@ -4,7 +4,7 @@
 
 <div align="center">
   <h1>A collection of riced suckless utilities</h1>
-</div>   
+</div>
 
 <b>
   <div align="center">
