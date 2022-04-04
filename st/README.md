@@ -1,5 +1,5 @@
-<h1> 
-    My build of <img src="https://st.suckless.org/st.svg" alt="st"> 
+<h1>
+    My build of <img src="https://st.suckless.org/st.svg" alt="st">
 </h1>
 
 <p>
@@ -23,11 +23,11 @@
             <td>Zoom in</td>
         </tr>
         <tr>
-            <td><b>&lt;Ctrl-Shift&gt; Z</b></td> 
+            <td><b>&lt;Ctrl-Shift&gt; Z</b></td>
             <td>Zoom out</td>
         </tr>
         <tr>
-            <td><b>&lt;Ctrl-Shift&gt; H</b></td> 
+            <td><b>&lt;Ctrl-Shift&gt; H</b></td>
             <td>Reset zoom</td>
         </tr>
         <tr>
@@ -39,7 +39,7 @@
             <td>Paste text</td>
         </tr>
         <tr>
-            <td><b>&lt;Ctrl&gt; k</b></td> 
+            <td><b>&lt;Ctrl&gt; k</b></td>
             <td>Scroll up one line</td>
         </tr>
         <tr>

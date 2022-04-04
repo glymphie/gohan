@@ -28,8 +28,11 @@ In your .xinitrc
         <dd>- Right-click: Mute.</dd>
     <li><b>Weather</b>: Shows the weather in Copenhagen. </li>
         <dd>- Left-click: Show some more extensive weather information.</dd>
+    <li><b>Keyboard Layout</b>: Shows current keyboard layout. </li>
+    <li><b>Internet Usage</b>: Shows currently used upload and download. </li>
     <li><b>Ethernet connection</b>: Shows all ethernet connections. </li>
         <dd>- Left-click: Shows all interfaces with their IPs. Only the ones with operstate "UP".</dd>
+        <dd>- Right-click: Start wpa_cli.</dd>
     <li><b>Internet connection</b>: Shows connectivity to the internet.</li>
         <dd>- Left-click: Shows public IPv4 and IPv6.</dd>
     <li><b>Date</b>: Shows the current date.</li>
