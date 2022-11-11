@@ -1,5 +1,5 @@
 # dwm version
-VERSION = 6.3
+VERSION = 6.4
 
 # Customize below to fit your system
 
@@ -21,6 +21,7 @@ FREETYPELIBS = -lfontconfig -lfreetype -lXrender -lX11 -L../libxft-bgra/src -l:l
 FREETYPEINC = /usr/include/freetype2 -I$(PWD)/../libxft-bgra/include
 # OpenBSD (uncomment)
 #FREETYPEINC = ${X11INC}/freetype2
+#MANPREFIX = ${PREFIX}/man
 
 # includes and libs
 INCS = -I${X11INC} -I${FREETYPEINC}

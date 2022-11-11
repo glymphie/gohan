@@ -1,6 +1,4 @@
 #!/bin/sh
-rm -rf dmenu dwm dwmblocks st libxft-bgra slock
-
 SUCKLESS="$GIT/suckless"
 
 rsync -a --delete --exclude=".git" --exclude="README*" "$SUCKLESS/st" .

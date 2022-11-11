@@ -22,7 +22,6 @@ In your .xinitrc
 </h2>
 
 <ul>
-    <li><b>Currently playing</b>: Shows the currently playing song via Spotify. </li>
     <li><b>Volume info</b>: Shows the current Master volume. </li>
         <dd>- Left-click: Start Pulsemixer client window.</dd>
         <dd>- Right-click: Mute.</dd>

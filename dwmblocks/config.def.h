@@ -1,5 +1,5 @@
 /* macro for conveniently specifying pathu and pathc below */
-#define PATH(name)                      "/home/glymph/.local/bin/"name
+#define PATH(name)                      "/home/glymphie/.local/bin/"name
 
 /* buffer size for capturing output of the programs used for updating blocks */
 #define CMDOUTLENGTH                    50
@@ -43,7 +43,6 @@ static const char delimiter[] = { ' ', '|', ' ', DELIMITERENDCHAR };
 
 static Block blocks[] = {
 /*      pathu                           pathc                           interval        signal */
-        { PATH("get-track-info"),       PATH("get-track-info.button"),  3,              1},
         { PATH("vol-info"),             PATH("vol-info.button"),        3,              2},
         { PATH("weather-curl"),         PATH("weather-curl.button"),    3600,           3},
         { PATH("kb-info"),              NULL,  						    5,              7},
