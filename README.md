@@ -1,4 +1,10 @@
 <div align="center">
+
+# Gohan
+
+</div>
+
+<div align="center">
   <img src="https://i.imgur.com/fJcmwnu.png" alt="Gohan" align="center" width=360>
 </div>
 
@@ -29,20 +35,5 @@
 </b>
 
 <div align="center">
-  <h2>
-    <img src="https://i.imgur.com/nPRyR0D.png" alt=":)" align="center" width=94>
-    IMPORTANT
-    <img src="https://i.imgur.com/BCr42Jf.png" alt=":)" align="center" width=94>
-  </h2>
-</div>
-
-<div align="center">
-  <p>
-    <b>libxft-bgra</b> is included to enable emojies in the suckless utilities.
-    The makefiles are edited to use this library instead of the one installed on
-    the system.
-  </p>
-  <p>
-    I use <b>doas</b> btw
-  </p>
+  <img src="https://i.imgur.com/nPRyR0D.png" alt=":)" align="center" width=94>
 </div>

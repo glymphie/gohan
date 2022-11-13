@@ -188,5 +188,5 @@
 </h2>
 
 <pre><code>make
-doas make install
+make install
 </code></pre>

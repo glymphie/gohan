@@ -14,3 +14,11 @@
 <p>
     Controlled by sxhkd with <b>&lt;Ctrl-Shift&gt; L</b>
 </p>
+
+<h2>
+    Installation
+</h2>
+
+<pre><code>make
+make install
+</code></pre>
