@@ -37,6 +37,9 @@ static const char *colors[][3]      = {
 	[SchemeSel]  = { col_selfg, col_selbg,  col_selborder  },
 };
 
+static const XPoint stickyicon[]    = { {0,0}, {4,0}, {4,8}, {2,6}, {0,8}, {0,0} }; /* represents the icon as an array of vertices */
+static const XPoint stickyiconbb    = {4,8};	/* defines the bottom right corner of the polygon's bounding box (speeds up scaling) */
+
 /* tagging */
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
@@ -48,9 +51,9 @@ static const Rule rules[] = {
 	/* class     		instance  title           	tags mask	isfloating	isterminal	noswallow	floatpos		  			monitor */
 	{ "st",      		NULL,     NULL,           	0,         	0,          1,          0,       	NULL,			  			-1 },
 	{ NULL,		        NULL,     "Event Tester", 	0,         	1,          0,          1,       	NULL,			  			-1 }, /* xev */
-	{ NULL,		 		NULL,     "pulsemixer",   	0,    	   	1,          0,          -1,       	"50% 50%",			  		-1 }, 
-	{ "b_mouse",		NULL,     NULL,   	 	  	0,    	   	1,          0,          -1,       	"0m 0m 400W 200H", 			-1 }, 
-	{ "b_float_wttr",	NULL,     NULL,   	 	  	0,    	   	1,          0,          -1,       	"50% 50% 780W 900H", 	 	-1 }, 
+	{ NULL,		 		NULL,     "pulsemixer",   	0,    	   	1,          0,          -1,       	"50% 50%",			  		-1 },
+	{ "b_mouse",		NULL,     NULL,   	 	  	0,    	   	1,          0,          -1,       	"0m 0m 400W 200H", 			-1 },
+	{ "b_float_wttr",	NULL,     NULL,   	 	  	0,    	   	1,          0,          -1,       	"50% 50% 780W 900H", 	 	-1 } 
 };
 
 /* layout(s) */

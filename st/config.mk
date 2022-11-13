@@ -22,12 +22,10 @@ PKG_CONFIG = pkg-config
 
 INCS = -I$(X11INC) \
        `$(PKG_CONFIG) --cflags fontconfig` \
-       `$(PKG_CONFIG) --cflags freetype2` \
-       -I$(PWD)/../libxft-bgra/include
-LIBS = -L$(X11LIB) -lm -lrt -lX11 -lutil -lXrender\
+       `$(PKG_CONFIG) --cflags freetype2`
+LIBS = -L$(X11LIB) -lm -lrt -lX11 -lutil -lXrender -lXft \
        `$(PKG_CONFIG) --libs fontconfig` \
-       `$(PKG_CONFIG) --libs freetype2` \
-       -L../libxft-bgra/src -l:libXft.a
+       `$(PKG_CONFIG) --libs freetype2`
 
 # flags
 STCPPFLAGS = -DVERSION=\"$(VERSION)\" -D_XOPEN_SOURCE=600
