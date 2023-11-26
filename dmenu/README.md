@@ -1,32 +1,20 @@
-<h1> 
-    My build of dmenu
-</h1>
+# My build of dmenu
 
-<p>
-    The <a href="https://tools.suckless.org/dmenu/" >dynamic menu for X (dmenu)</a> with some additional patches.
-</p>
-<p>
-    This plays really nicely with dwm. It's mainly used to spawn in the
-    middle of the screen to search for executables.
-</p>
+The <a href="https://tools.suckless.org/dmenu/" >dynamic menu for X (dmenu)</a> with some additional patches.
 
-<h2>
-    Patches
-</h2>
+This plays really nicely with dwm. It's mainly used to spawn in the
+middle of the screen to search for executables.
 
-<ul>
-    <li><a href="https://tools.suckless.org/dmenu/patches/border/">border</a>: Vanity border around dmenu.</li>
-    <li><a href="https://tools.suckless.org/dmenu/patches/case-insensitive/">case-insensitive</a>: Case-insensitive matching as defualt.</li>
-    <li><a href="https://tools.suckless.org/dmenu/patches/center/">center</a>: Added center flag.</li>
-    <li><a href="https://tools.suckless.org/dmenu/patches/grid/">grid</a>: Grid entries layout.</li>
-    <li><a href="https://tools.suckless.org/dmenu/patches/highlight/">highlight</a>: "Fuzzy" search.</li>
-    <li><a href="https://tools.suckless.org/dmenu/patches/xresources/">xresources</a>: Color control via Xresources.</li>
-</ul>
+## Patches
 
-<h2>
-    Install
-</h2>
+- [border](https://tools.suckless.org/dmenu/patches/border/): Vanity border around dmenu.
+- [center](https://tools.suckless.org/dmenu/patches/center/): Added center flag.
+- [grid](https://tools.suckless.org/dmenu/patches/grid/): Grid entries layout.
+- [highlight](https://tools.suckless.org/dmenu/patches/highlight/): "Fuzzy" search.
 
-<pre><code>make
+## Install
+
+```bash
+make
 make install
-</code></pre>
+```

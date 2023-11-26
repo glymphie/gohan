@@ -18,13 +18,13 @@ static const int failonclear = 1;
 /*Enable Pixelation*/
 #define PIXELATION
 /*Set pixelation radius*/
-static const int pixelSize=30;
+static const int pixelSize=60;
 
 /* default message */
 static const char * message = "Suckless: Software that sucks less.";
 
 /* text color */
-static const char * text_color = "#ffffff";
+static const char * text_color = "#e5e9f0";
 
 /* text size (must be a valid size) */
 static const char * font_name = "6x13";

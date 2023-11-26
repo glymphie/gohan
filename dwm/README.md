@@ -1,14 +1,8 @@
-<h1> 
-    My build of <img src="https://dwm.suckless.org/dwm.svg" alt="dwm"> 
-</h1>
+# My build of <img src="https://dwm.suckless.org/dwm.svg" alt="dwm">
 
-<p>
-    The <a href="https://dwm.suckless.org/">dynamic window manager (dwm)</a> with some additional patches.
-</p>
+The [dynamic window manager (dwm)](https://dwm.suckless.org/) with some additional patches.
 
-<h2>
-    Key Bindings
-</h2>
+## Key Bindings
 
 <table>
     <thead>
@@ -31,11 +25,11 @@
             <td>Sticky client</td>
         </tr>
         <tr>
-            <td><b>&lt;Super&gt; k</b></td> 
+            <td><b>&lt;Super&gt; k</b></td>
             <td>Next client in stack</td>
         </tr>
         <tr>
-            <td><b>&lt;Super&gt; j</b></td> 
+            <td><b>&lt;Super&gt; j</b></td>
             <td>Previous client in stack</td>
         </tr>
         <tr>
@@ -63,11 +57,11 @@
             <td>Move client to right monitor</td>
         </tr>
         <tr>
-            <td><b>&lt;Super&gt; i</b></td> 
+            <td><b>&lt;Super&gt; i</b></td>
             <td>Increase master stack</td>
         </tr>
         <tr>
-            <td><b>&lt;Super&gt; d</b></td> 
+            <td><b>&lt;Super&gt; d</b></td>
             <td>Decrease master stack</td>
         </tr>
         <tr>
@@ -139,7 +133,6 @@
         </tr>
     </tbody>
 </table>
-
 
 <h2>
     Mouse 👹
